@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117838861-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117838861-2');
+</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Order</title>
+	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    
+   <!-- Navigation -->
+    <header>
+		<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #588104;">
+			<div class="container-fluid">
+				<!-- Logo -->
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/img/HomeSliceLogoWhiteFont.png" class="logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#meetthechef">Meet the Chef</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="menu.html">Menu</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="order.html">Order</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+	
+	
+	
+	
+
+<form id="orderform">
+    <div class="formcontainer">
+        <h1>Order</h1>
+              
+            <br>
+            
+            <label class="formlabel" for="CustomerName">*Name: </label>
+            <input type="text" id="CustomerName" name="CustomerName" size="20" maxlength="20">
+            <br><br>
+
+            
+            <label class="formlabel" for="Email">Email: </label>
+            <input type="text" id="Email" name="Email" size="20" maxlength="20">
+            <br><br>
+            
+            <label class="formlabel" for="PhoneNumber">*Phone Number: </label>
+            <input type="text" id="PhoneNumber" name="PhoneNumber" size="20" maxlength="20">
+            <br><br>
+            
+            
+          <label class="formlabel" for="PickUp">Pick Up Time: </label> 
+            <select id="PickUp"> 
+                <option value="0">11:00 - 11:30 am</option>
+                <option value="1">11:30 - 12:00 pm</option>
+                <option value="2">12:00 - 12:30 pm</option>
+                <option value="3">12:30 - 1:00 pm</option>
+                <option value="4">1:00 - 1:30 pm</option>
+                <option value="5">1:30 - 2:00 pm</option>
+                <option value="6">2:00 - 2:30 pm</option>
+                <option value="7">2:30 - 3:00 pm</option>
+                <option value="8">3:30 - 4:00 pm</option>
+                <option value="9">4:00 - 4:30 pm</option>
+                <option value="10">4:30 - 5:00 pm</option>
+            </select>
+    
+          <br><br>
+          
+<!--Does "select id=" need to select the Qty or Products type and if the latter, how do you select qty.
+    Check with Bruce to see why data isn't going to database, does rest need to select Database or Table
+    Formatting
+    just an overall look at data structure-->
+    
+    
+          <div class="pizzacontainer">
+          <h2 id="orderh2">*Pizza:</h2>
+                    <input type="checkbox" name="Pizza" value="Cheese"> Cheese 
+                    <br> Mozerella | Sauce</br>
+                    
+                    <label class="sizelabel" for="Cheese">*Size: </label> 
+            <select id="Sizes">                                        
+                <option value="sml">10" Small $10.99</option>
+                <option value="med">13" Medium $12.99</option>
+                <option value="lrg">15" Large $15.99</option>
+          </select>
+           <label class="sizelabel" for="Cheese">*Crust: </label> 
+            <select id="Product">
+                 <option value="thick">Thick</option>
+                <option value="thin">Thin</option>
+                </select>
+          <label class="sizelabel" for="Cheese">*Qty: </label> 
+            <select id="Product">                                        
+                <option value="1Cheese">1</option>
+                <option value="2Cheese">2</option>
+                <option value="3Cheese">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+                
+                    <div class="pepperonicontainer">
+                    <input type="checkbox" name="Pizza" value="Pepperoni"> Pepperoni 
+                    <br> Mozerella | Pepperoni | Sauce</br>
+                    
+                    <label class="sizelabel" for="pepperonipizza">*Size: </label> 
+            <select name="time">                                        
+                <option value="small">10" Small $10.99</option>
+                <option value="med">13" Medium $12.99</option>
+                <option value="large">15" Large $15.99</option>
+          </select>
+           <label class="sizelabel" for="Cheese">*Crust: </label> 
+            <select id="Product">
+                 <option value="thick">Thick</option>
+                <option value="thin">Thin</option>
+                </select>
+          <label class="sizelabel" for="pepperonipizza">*Qty: </label> 
+            <select id="Qty">                                        
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+                </div>
+                    <div class="veggiecontainer">
+                    <input type="checkbox" name="pizza" value="Veggie"> Veggie 
+                    <br> Mozzarella | Green Bell Peppers |<br> Red Bell Peppers | Onions | Olives <br> |Mushrooms | Sauce 
+                    
+        <label class="sizelabel" for="veggiepizza">*Size: </label> 
+        <select name="time">                                        
+                <option value="small">10" Small $10.99</option>
+                <option value="med">13" Medium $12.99</option>
+                <option value="large">15" Large $15.99</option>
+          </select>
+           <label class="sizelabel" for="Cheese">*Crust: </label> 
+            <select id="Product">
+                 <option value="thick">Thick</option>
+                <option value="thin">Thin</option>
+                </select>
+          <label class="sizelabel" for="veggiepizza">*Qty: </label> 
+            <select id="Qty">                                        
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+          </select>
+                </div>
+                
+                <div class="hogcontainer">
+                    
+                    <input type="checkbox" name="pizza" value="The Hog"> The Hog 
+                    <br> Mozzarella | Italian Sausage | Pepperoni | Sauce</br>
+                    
+                    <label class="sizelabel" for="thehogpizza">*Size: </label> 
+            <select name="time">                                        
+                <option value="small">10" Small $10.99</option>
+                <option value=med>13" Medium $12.99</option>
+                <option value="large">15" Large $15.99</option>
+          </select>
+           <label class="sizelabel" for="Cheese">*Crust: </label> 
+            <select id="Product">
+                 <option value="thick">Thick</option>
+                <option value="thin">Thin</option>
+                </select>
+              <label class="sizelabel" for="thehogpizza">*Qty: </label> 
+            <select id="Qty">                                        
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+          </select>
+                </div>
+                
+                <div class="pizzacontainer">
+                    
+                    <input type="checkbox" name="pizza" value="Hawaiian"> Hawaiian 
+                    <br> Mozzarella | Canadian Bacon | Pineapple | Sauce</br>
+                    
+                    <label class="sizelabel" for="hawaiianpizza">*Size: </label> 
+            <select name="time">                                        
+                <option value="small">10" Small $10.99</option>
+                <option value="med">13" Medium $12.99</option>
+                <option value="large">15" Large $15.99</option>
+          </select>
+           <label class="sizelabel" for="Cheese">*Crust: </label> 
+            <select id="Product">
+                 <option value="thick">Thick</option>
+                <option value="thin">Thin</option>
+                </select>
+          <label class="sizelabel" for="hawaiianpizza">*Qty: </label> 
+            <select id="Qty">                                        
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+          </select>
+                </div>
+                
+                <div class="pizzacontainer">
+                    
+                    <input type="checkbox" name="pizza" value="Supreme"> Supreme 
+                    <br> Mozzarella | Pepperoni | Sausage | Hamburger |<br> Canadian Bacon | Green Bell Peppers |<br> Red Bell Peppers | Onions | Mushrooms | Olives | Sauce
+</br>
+                    
+                    <label class="sizelabel" for="supremepizza">*Size: </label> 
+            <select name="time">                                        
+                <option value="small">10" Small $10.99</option>
+                <option value="med">13" Medium $12.99</option>
+                <option value="large">15" Large $15.99</option>
+          </select>
+           <label class="sizelabel" for="Cheese">*Crust: </label> 
+            <select id="Product">
+                 <option value="thick">Thick</option>
+                <option value="thin">Thin</option>
+                </select>
+          <label class="sizelabel" for="supremepizza">*Qty: </label> 
+            <select id="Qty">                                        
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+          </select>
+                </div>
+                
+                <div class="pizzacontainer">
+                    
+                    <input type="checkbox" name="pizza" value="none"> None 
+                </div>
+              
+             <div class="itemscontainer">
+                   
+        <h3>Side Items:</h3>
+            <label class="sideslabel" for="breadsticks">Breadsticks: </label> 
+            <select name="time">                                        
+                <option value="reg"> Regular $5.99</option>
+                <option value="stuffed"> Stuffed $5.99</option>
+          </select>
+          <label class="sizelabel" for="breadsticks">*Qty: </label> 
+            <select id="Qty">                                        
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+          </select>
+                </div>
+        <div>
+            <label class="sideslabel" for="salad"> Salad: </label> 
+            <select name="time">                                        
+                <option value="salad"> House Salad $2.99</option>
+          </select>
+          <label class="sizelabel" for="salad">*Qty: </label> 
+            <select id="Qty">                                        
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+          </select>
+                </div>
+                 
+       <div class="drinkcontainer">
+        <h4>Beverages</h4> 
+        
+            <div class="drinktainer">
+                    
+                    <input type="checkbox" name="drink" value="Coke"> Coke $1.50
+                    <label class="drinklabel" for="Coke">*Qty: </label> 
+            <select id="Qty">                                        
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+          </select>
+          </div>
+        </div>
+         
+                  <div class="drinkcontainer">
+                    
+                    <input type="checkbox" name="drink" value="Sprite"> Sprite $1.50
+
+               </select>
+               <label class="drinklabel" for="Sprite">*Qty: </label> 
+            <select id="Qty">                                        
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+          </select>
+                </div>
+                
+                <div class="drinkcontainer">
+                
+            <input type="checkbox" name="drink" value="Dr. Pepper"> Dr. Pepper $1.50
+                    <label class="drinklabel" for="DrP">*Qty: </label> 
+            <select id="Qty">                                        
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+          </select>
+          </div>
+          <div class="drinkcontainer">
+             
+          <input type="checkbox" name="drink" value=" Diet Coke"> Diet Coke $1.50
+                    <label class="drinklabel" for="DC">*Qty: </label> 
+            <select id="Qty">                                        
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+          </select>
+          </div>
+                  <div class="drinkcontainer">
+                 <input type="checkbox" name="drink" value="Tea"> Iced Tea $1.50
+                    <label class="drinklabel" for="Tea">*Qty: </label> 
+            <select id="Qty">                                        
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+          </select>
+          </div>
+
+                
+         <button id="submit" onclick="ProcessForm()"> Pizza Time! </button>
+</form>
+
+<script>
+  function ProcessForm()
+{
+    var myData = {};
+    
+    var x = document.getElementById("CustomerName").value;
+        myData.CustomerName =  document.getElementById("CustomerName")[x].value;
+        
+    var x = document.getElementById("Products").selectedIndex;
+        myData.Products =  document.getElementById("Products")[x].value;
+        
+        
+        
+        var myURL = "https://mythos-bcrawford.c9users.io/pizza/restapi.php/Order";
+        var myMethod = "POST";
+$(document).ready(function() {
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+        });
+  });
+}    
+</script>
+
+</body>
+
+<footer class="primary">
+  	<h6><a href="index.html">Home</a> | <a href="index.html#chef">Meet the Chef</a> | <a href="menu.html">Menu</a> | <a href="order.html">Order</a> | <a href="contact.html">Contact</a></h6>
+    <h6>Visit Us • EIT 547, 2801 South University Ave., LR, AR, 72204</h6>
+    <h6>&copy; 2018 Home Slice, All Rights Reserved</h6>
+</footer>
+</html>

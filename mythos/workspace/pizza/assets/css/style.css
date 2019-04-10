@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    background-color: #000000;
+}
+
+a {
+    color: white;
+}
+
+footer.primary a,
+.directionstxt {
+    text-decoration: underline
+}
+
+/* ------- Navbar ------- */
+
+.navbar {
+    background-color: #588104;
+    padding-top: 20px;
+}
+
+.navbar .nav-link {
+    font-size: 1.5em;
+}
+
+.logo {
+    display: none;
+}
+
+.mobile-logo {
+    display: block;
+}
+
+header.primary {
+    margin-bottom: 60px;
+}
+.sides{padding-top:20px;}
+
+#ordernow a {
+    color: #D69215;
+}
+
+#ordernow a:hover {
+    color: #FFD15E;
+}
+
+/* ------- Applies to Multiple ------- */
+
+#about,
+#chef,
+#content,
+#contact,
+#menu,
+#order.container{
+    border-radius: 15px;
+    background-color: #588104;
+    padding: 25px;
+    color: white;
+    margin-bottom: 60px;
+}
+
+#about h2,
+#chef h2, 
+#menu h2{
+    font-size: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#menu h3 {
+    font-size: 40px;
+}
+
+#about p,
+#chef p,
+#contact p,
+#menu p {
+    font-size: 22px;
+}
+
+.contacttxt,
+.menutxt,
+.ordertxt {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.order-button {
+    color: #D69215;
+    text-decoration: none;
+}
+button a:hover {
+    text-decoration: none;
+    color: #FF2F00;
+}
+
+/* ------ Home Order Button ------*/
+
+#home-order-button {
+    color: #fff;
+    background-color: #D69215;
+    position: relative;
+    left: 45%;
+}
+
+#home-order-button:hover {
+    background-color: #FF2F00;
+    opacity: .9;
+    
+}
+
+#home-order-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#home-order-button a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* ------- About ------- */
+
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/stock6.jpg");
+
+    /* Set a specific height */
+    min-height:250px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 60px;
+}
+
+#chefimg {
+    float: right;
+    width: 20%;
+    position: relative;
+    bottom: 50%;
+}
+
+/* Contact */
+
+section #content {
+    height: 80%;
+}
+
+#content .addresstxt {
+    text-align: center;
+
+}
+
+#content .map {
+    width: 70%;
+}
+
+#content {
+    text-align: center;
+    height: 80%;
+}
+
+.addresstxt a:hover {
+    text-decoration: none;
+    color: #D69215 ;
+}
+
+.location {
+    width: 100%;
+}
+
+/* ------- Menu ------- */
+
+
+#menu img {
+    max-width: 250px;
+    display: block;
+    margin: 20px auto;
+}
+
+
+.menuitems {
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+
+#menu {
+    text-align: center;
+    background-color: #588104;
+    padding: 20px;
+    color: white;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}
+
+#menu.row {
+    background-color: #588104;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+/* ------ Menu Order Buttons ------*/
+
+#menu-button {
+    margin: 10%;
+    position: relative;
+    left: 0%;
+    background-color: #D69215;
+    color: #fff;
+}
+
+#menu-button a:hover {
+    color: #fff;
+}
+#menu-button:hover {
+    opacity: .9;
+    background: #FF2F00;
+}
+
+#button {
+    position: relative;
+    left: 0%;
+    background-color: #D69215;
+    color: #fff;
+}
+
+#button a {
+    color: #fff;
+}
+
+#button a:hover {
+    color: #fff;
+}
+
+#button:hover {
+    opacity: .9;
+    background: #FF2F00;
+}
+
+/* ------- Order Page -------*/
+
+/* ------- Submit Order Button ------*/
+
+#submit {
+    color: #fff;
+    background-color: #D69215;
+    position: relative;
+    left: 45%;
+}
+
+#submit:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF2F00;
+    opacity: .9;
+}
+
+/* ------- Footer ---------*/
+
+footer.primary {
+    padding: 40px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    background-color: #588104;
+}
+
+footer a:hover {
+    color: #D69215;
+}
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+    .navbar {
+        background-color: #588104;
+        padding-top: 110px;
+    }
+    .navbar .nav-link {
+        font-size: 1.5em;
+    }
+    .mobile-logo {
+        display: none;
+    }
+    .logo {
+        display: block;
+        width: 280px;
+        position: absolute;
+        top: 20px;
+    }
+}

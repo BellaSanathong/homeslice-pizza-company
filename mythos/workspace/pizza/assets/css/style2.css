@@ -1,0 +1,380 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    width:100%;
+    background-color: #000000;
+}
+
+h3 {
+    text-decoration: none;
+    border: none;
+    
+}
+.navbar {
+    height: 100px;
+}
+
+.logo {
+    height: 275%;
+    position: absolute;
+    top: -50px;
+}
+
+
+
+/* About Page */
+
+.aboutcontainer {
+    height: 275px;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    
+}
+
+#about {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    background-color: #588104;
+    height: 60%;
+    width: 95%;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    font-size: 100%;
+    
+}
+
+.block {
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    height: 25px;
+    width: 100px;
+    left: 45%;
+}
+
+.order {
+    color: #588104;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    width: 100px;
+    height: 25px;
+    font-size: 100%;
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: #334C00;
+    
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/stock6.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Meet the Chef */
+
+#chefabout {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    background-color: #588104;
+    color: #fff;
+    padding: 10px;
+    height: 225px;
+}
+
+.cheftxt {
+    color: #fff;
+    font-size: 100%;
+}
+
+p {
+    font-size: 100%;
+}
+
+
+
+
+
+
+/* Contact Page */
+
+
+
+
+#contact {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    background-color: #588104;
+    color: #fff;
+}
+
+.contacttxt {
+    color: #fff;
+    text-align: center;
+    font-size: 55px;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 2.5%;
+    bottom: 2.5%;
+    left: 2.5%;
+    width: 60%;
+    height: 60%;
+    display: block;
+}
+
+.addresstxt {
+    position: relative;
+    float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+    font-size: 25px;
+}
+
+
+
+
+/* Menu Page */
+
+
+
+.menucontainer {
+    height: 80%;
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+
+.col-lg {
+    color: #fff;
+    text-align: center;
+    font-size: 100%;
+}
+
+
+
+#menuheadtxt {
+    color: #fff;
+    text-align: center;
+    font-size: 55px;  
+}
+
+#menusubtxt {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;  
+}
+
+
+#menuitems {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    background-color: #588104;
+    height: 60%;
+    width: 95%;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    font-size: 100%;
+}
+
+    
+.cheese {
+    width: 45%;
+    position: relative;
+}
+
+.veggie {
+    width: 45%;
+    position: relative;
+}
+
+.hawaiian {
+    width: 45%;
+    position: relative;
+}
+
+.pepperoni {
+    width: 45%;
+    position: relative;
+}
+
+.thehog {
+    width: 45%;
+    position: relative;
+}
+
+.supreme {
+    width: 45%;
+    position: relative;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}
+
+.col-md {
+    color: #fff;
+    text-align: center;
+    font-size: 100%;    
+}
+
+
+/* Order Page */
+
+
+form#orderform {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    background-color: #588104;
+    float:left;
+    color: #fff;
+    height: 80%;
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+    
+.formcontainer {
+    width: 1000px;
+    padding: 10px;
+    float: left;
+    float: right;
+    margin-left: 50px;
+}
+
+.formlabel {
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+    padding: 5px;
+    
+}
+
+.sizelabel {
+    display:inline-block;
+    width: 100px;
+    text-align: right;
+    padding: 5px;
+    
+}
+.sideslabel {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding-right: 50px;
+    
+}
+
+.drinklabel{
+    display: inline-block ;
+    width: 100px;
+    text-align: right;
+    padding-right: 50px;
+    
+}
+.pepperonicontainer{
+     width: 1000px;
+    padding: 10px;
+    float: right;
+    margin-left: 50px;
+}
+.error {
+    color: red;
+    padding-left: 5px;
+}
+
+h1 {
+    border-bottom: 3px solid #cc9900;
+    font-size: 30px;
+}
+
+h2#orderh2 {
+    border-top: 3px solid #cc9900;
+    font-size: 30px;
+}
+
+h3 {
+
+    border-top: 3px solid #cc9900;
+    font-size: 30px;
+}
+
+h4 {
+
+    border-top: 3px solid #cc9900;
+    font-size: 30px;
+}
+
+pizzacontainer {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    background-color: #588104;
+    float:left;
+    color: #fff;
+}
+
+
+/* Other */
+
+#footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin:0;
+    color:#fff;
+    text-align:center;
+    font-size:18px;
+    background-color: #588104;
+    clear:both; 
+}
+
+
+
+a {
+    color: white;
+}
+

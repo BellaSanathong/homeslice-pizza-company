@@ -1,0 +1,140 @@
+<div class="question">
+        <label for="CustomerName" id="CustomerName"> * Name:</label>
+      </div>
+
+      <div class="input">
+        <input id="CustomerName" type="Name" placeholder="Enter your name here" required>
+      </div>
+
+      <div class="question">
+        <label for="Email" id="Email"> * Email:</label>
+      </div>
+
+      <div class="input">
+        <input id="Email" type="Email" placeholder="Enter your email here" required>
+      </div>
+      
+      <div class="question">
+        <label for="PhoneNumber" id="PhoneNumber"> * Phone Number:</label>
+      </div>
+
+      <div class="input">
+        <input id="PhoneNumber" type="tel" placeholder="Enter your phone number here" required>
+      </div>
+      
+      <div class="question">
+        <label for="PickUp" id="PickUp"> Pick Up Time</label>
+      </div>
+
+      <div class="input">
+        <input id="PickUp" type="datetime-local" value="2018-11-29T12:30" required>
+      </div>
+
+
+
+
+<div class="question">
+        <label for="Qty" id="Qty"> Quantity:</label>
+    </div>
+
+<div class="input">
+        <select id="Qty">
+      <option value=""></option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+        </select>
+    </div>
+    
+<div class="question">
+        <label for="Sizes" id="Sizes"> Size/Price:</label>
+    </div>
+
+<div class="input">
+        <select id="Sizes">
+      <option value=""></option>
+      <option value="Sml">Small  $10.99</option>
+      <option value="Med">Medium $12.99</option>
+      <option value="Lrg">Large  $15.99</option>
+      <option value="Reg">Regular Breadsticks  $3.99</option>
+      <option value="Stf">Stuffed Breadsticks  $5.99</option>
+        </select>
+    </div>
+    
+<div class="question">
+        <label for="Products" id="Products"> Product:</label>
+    </div>
+
+<div class="input">
+        <select id="Products">
+      <option value=""></option>
+      <option value="Chz">Cheese</option>
+      <option value="Pep">Pepperoni</option>
+      <option value="Veg">Vegetarian</option>
+      <option value="Hog">The Hog</option>
+      <option value="Haw">Hawaiian</option>
+      <option value="Sup">Supreme</option>
+      <option value="Brd">Breadsticks</option>
+      <option value="Sal">Salad</option>
+      <option value="Cok">Coke</option>
+      <option value="Dtc">Diet Coke</option>
+      <option value="Drp">Dr. Pepper</option>
+      <option value="Spr">Sprite</option>
+      <option value="Tea">Iced Tea</option>
+        </select>
+    </div>
+    
+<div class="question">
+        <label for="Crusts" id="Crust"> Crust:</label>
+    </div>
+
+<div class="input">
+        <select id="Crusts">
+      <option value=""></option>
+      <option value="Thc">Thick</option>
+      <option value="Thn">Thin</option>
+        </select>
+    </div>
+    
+    <div class="question">
+        <label for="Comments">Comments:</label>
+      </div>
+      
+      <div class="input">
+        <textarea id="Comments" placeholder="Leave your comments here..."></textarea>
+      </div>
+      
+      <button id="submit" onclick="ProcessForm()"> Submit </button>
+      
+      
+      
+      
+      
+      <div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker3'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker3').datetimepicker({
+                    format: 'LT'
+                });
+            });
+        </script>
+    </div>
+</div>

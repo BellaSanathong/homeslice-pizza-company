@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117838861-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-117838861-2');
+	</script>
+	<title>Order Here</title>
+	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<header class="primary">
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+			<div class="container-fluid">
+				<!-- Logo -->
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/img/hs-logo-225.png" class="logo">
+					<img src="assets/img/logomobile-50.png" class="mobile-logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="menu.html">Menu</a>
+						</li>
+						<li class="nav-item">
+							<div id="ordernow">
+								<a class="nav-link" href="order-option.html">Order</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#chef">Meet the Chef</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+	<!-- Order Form -->
+	<section id="order" class="container">
+    <div class="ordertxt">
+        <h1>Order</h1>
+        </div>
+        <hr>
+        <br>
+        <form id="PizzaForm" method="post">
+    </div>
+        
+
+            
+        <div class="row">
+          <div class="col-sm-6 col-md-3" >
+             <div class="form-group">
+    <label for="CustomerName">* Name:</label>
+    <input type="text" class="form-control" id="CustomerName" placeholder="Enter Your Name Here">
+  </div> 
+          </div>
+          <div class="col-sm-6 col-md-3" >
+            <div class="form-group">
+    <label for="Email">* Email:</label>
+    <input type="text" class="form-control" id="Email" placeholder="Enter Your Email Here">
+  </div>   
+          </div>
+
+           <div class="col-sm-6 col-md-3" >
+           <div class="form-group">
+    <label for="PhoneNumber">* Phone Number:</label>
+   <input type="tel" class="form-control" value="1-(555)-555-5555" id="PhoneNumber" placeholder="Enter Your Phone Number Here">
+  </div>
+  </div>   
+             <div class="col-sm-6 col-md-3" >
+           <div class="form-group">
+    <label for="PickUp">Pick Up Time:</label>
+    <input type="time" class="form-control" id="PickUp"  required>
+  </div>
+  </div>
+  </div>
+        
+        
+        
+            
+            
+        
+  
+ <!-- Pizza Type Select -->
+
+  <br>
+  <hr>
+  <h1> Pizza: </h1>
+
+     <div class="row">
+          <div class="col-sm-6 col-md-3" >
+              <div class="form-group">
+        <label for="Products1" id="lblProducts1"> Flavor:</label>
+ <select id="Products1" class="custom-select custum-select-sm">
+  <option disabled selected value> -- select an option -- </option>
+  <option value="Chz">Cheese</option>
+  <option value="Pep">Pepperoni</option>
+  <option value="Veg">Veggie</option>
+  <option value="Hog">The Hog</option>
+  <option value="Haw">Hawaiian</option>
+  <option value="Sup">Supreme</option>
+  </select>
+    </div>
+    </div>
+
+    
+   <div class="col-sm-6 col-md-3" >
+       <div class="form-group">
+        <label for="Quantity1" id="lblQty1"> Quantity:</label>
+ <select id="Quantity1" class="custom-select custum-select-sm">
+  <option disabled selected value> -- select an option -- </option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  </select>
+  </div>
+  </div>
+ 
+
+ <div class="col-sm-6 col-md-3" >
+       <div class="form-group">
+        <label for="Sizes1" id="lblSizes1"> Size/Price:</label>
+<select id="Sizes1" class="custom-select custum-select-sm">
+  <option disabled selected value> -- select an option -- </option>
+  <option value="Sml">Small $10.99</option>
+  <option value="Med">Medium $12.99</option>
+  <option value="Lrg">Large $15.99</option>
+  </select>
+  </div>
+  </div>
+  
+  <div class="col-sm-6 col-md-3" >
+       <div class="form-group">
+        <label for="Crusts1" id="lblCrusts1"> Crust:</label>
+   <select id="Crusts1" class="custom-select custum-select-sm">
+  <option disabled selected value> -- select an option -- </option>
+  <option value="Thc">Thick</option>
+  <option value="Thn">Thin</option>
+  </select>
+  </div>
+  </div>
+  </div>
+  
+   <div class="row">
+          <div class="col-sm-6 col-md-3" >
+              <div class="form-group">
+        <label for="Products2" id="lblProducts2"> Flavor:</label>
+ <select id="Products2" class="custom-select custum-select-sm">
+  <option disabled selected value> -- select an option -- </option>
+  <option value="Chz">Cheese</option>
+  <option value="Pep">Pepperoni</option>
+  <option value="Veg">Veggie</option>
+  <option value="Hog">The Hog</option>
+  <option value="Haw">Hawaiian</option>
+  <option value="Sup">Supreme</option>
+  </select>
+    </div>
+    </div>
+
+    
+   <div class="col-sm-6 col-md-3" >
+       <div class="form-group">
+        <label for="Quantity2" id="lblQty2"> Quantity:</label>
+ <select id="Quantity2" class="custom-select custum-select-sm">
+  <option disabled selected value> -- select an option -- </option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  </select>
+  </div>
+  </div>
+ 
+
+ <div class="col-sm-6 col-md-3" >
+       <div class="form-group">
+        <label for="Sizes2" id="lblSizes2"> Size/Price:</label>
+<select id="Sizes2" class="custom-select custum-select-sm">
+  <option disabled selected value> -- select an option -- </option>
+  <option value="Sml">Small $10.99</option>
+  <option value="Med">Medium $12.99</option>
+  <option value="Lrg">Large $15.99</option>
+  </select>
+  </div>
+  </div>
+  
+  <div class="col-sm-6 col-md-3" >
+       <div class="form-group">
+        <label for="Crusts2" id="lblCrusts2"> Crust:</label>
+   <select id="Crusts2" class="custom-select custum-select-sm">
+  <option disabled selected value> -- select an option -- </option>
+  <option value="Thc">Thick</option>
+  <option value="Thn">Thin</option>
+  </select>
+  </div>
+  </div>
+  </div>
+  
+   <div class="row">
+          <div class="col-sm-6 col-md-3" >
+              <div class="form-group">
+        <label for="Products3" id="lblProducts3"> Flavor:</label>
+ <select id="Products3" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="Chz">Cheese</option>
+  <option value="Pep">Pepperoni</option>
+  <option value="Veg">Veggie</option>
+  <option value="Hog">The Hog</option>
+  <option value="Haw">Hawaiian</option>
+  <option value="Sup">Supreme</option>
+  </select>
+    </div>
+    </div>
+
+    
+   <div class="col-sm-6 col-md-3" >
+       <div class="form-group">
+        <label for="Quantity3" id="lblQty3"> Quantity:</label>
+ <select id="Quantity3" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  </select>
+  </div>
+  </div>
+ 
+
+ <div class="col-sm-6 col-md-3" >
+       <div class="form-group">
+        <label for="Sizes3" id="lblSizes3"> Size/Price:</label>
+<select id="Sizes3" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="Sml">Small $10.99</option>
+  <option value="Med">Medium $12.99</option>
+  <option value="Lrg">Large $15.99</option>
+  </select>
+  </div>
+  </div>
+  
+  <div class="col-sm-6 col-md-3" >
+       <div class="form-group">
+        <label for="Crusts3" id="lblCrusts3"> Crust:</label>
+   <select id="Crusts3" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="Thc">Thick</option>
+  <option value="Thn">Thin</option>
+  </select>
+  </div>
+  </div>
+  </div>
+  
+   <div class="row">
+          <div class="col-sm-6 col-md-3" >
+              <div class="form-group">
+        <label for="Products4" id="lblProducts4"> Flavor:</label>
+ <select id="Products4" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="Chz">Cheese</option>
+  <option value="Pep">Pepperoni</option>
+  <option value="Veg">Veggie</option>
+  <option value="Hog">The Hog</option>
+  <option value="Haw">Hawaiian</option>
+  <option value="Sup">Supreme</option>
+  </select>
+    </div>
+    </div>
+
+    
+   <div class="col-sm-6 col-md-3" >
+       <div class="form-group">
+        <label for="Quantity4" id="lblQty4"> Quantity:</label>
+ <select id="Quantity4" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  </select>
+  </div>
+  </div>
+ 
+
+ <div class="col-sm-6 col-md-3" >
+       <div class="form-group">
+        <label for="Sizes4" id="lblSizes4"> Size/Price:</label>
+<select id="Sizes4" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="Sml">Small $10.99</option>
+  <option value="Med">Medium $12.99</option>
+  <option value="Lrg">Large $15.99</option>
+  </select>
+  </div>
+  </div>
+  
+  <div class="col-sm-6 col-md-3" >
+       <div class="form-group">
+        <label for="Crusts4" id="lblCrusts4"> Crust:</label>
+   <select id="Crusts4" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="Thc">Thick</option>
+  <option value="Thn">Thin</option>
+  </select>
+  </div>
+  </div>
+  </div>
+  
+  <!-- Side Items Select -->
+  
+  <br>
+  <hr>
+  <h1>Side Items:</h1>
+  <div class="row">
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Products5" id="lblProducts5">Product:</label>
+  <select id="Products5" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+   <option value="Reg">Regular Breadsticks $3.99</option>
+   <option value="Stf">Stuffed Breadsticks $5.99</option>
+   <option value="Sal">House Salad $2.99</option>
+</select>
+</div>
+</div>
+
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Quantity5" id="lblQty5"> Quantity:</label>
+    <select id="Quantity5" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+ </select>
+  </div>
+ </div>
+ </div>
+ 
+ <div class="row">
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Products6" id="lblProducts6">Product:</label>
+  <select id="Products6" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+   <option value="Reg">Regular Breadsticks $3.99</option>
+   <option value="Stf">Stuffed Breadsticks $5.99</option>
+   <option value="Sal">House Salad $2.99</option>
+</select>
+</div>
+</div>
+
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Quantity6" id="lblQty6"> Quantity:</label>
+    <select id="Quantity6" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+ </select>
+  </div>
+ </div>
+ </div>
+ 
+ <div class="row">
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Products7" id="lblProducts7">Product:</label>
+  <select id="Products7" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+   <option value="Reg">Regular Breadsticks $3.99</option>
+   <option value="Stf">Stuffed Breadsticks $5.99</option>
+   <option value="Sal">House Salad $2.99</option>
+</select>
+</div>
+</div>
+
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Quantity7" id="lblQty7"> Quantity:</label>
+    <select id="Quantity7" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+ </select>
+  </div>
+ </div>
+ </div>
+ 
+ <!-- Beverages Select -->
+ 
+  <hr>
+  <h1>Beverages:</h1>
+  <div class="row">
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Products8" id="lblProducts8">Product:</label>
+  <select id="Products8" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+   <option value="Cok">Coke</option>
+   <option value="Dtc">Diet Coke</option>
+   <option value="Drp">Dr. Pepper</option>
+   <option value="Spr">Sprite</option>
+   <option value="Tea">Iced Tea</option>
+  </select>
+  </div>
+  </div>
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Quantity8" id="lbyQty8"> Quantity:</label>
+   <select id="Quantity8" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  </select>
+  </div>
+ </div>
+ </div>
+  
+      <div class="row">
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Products9" id="lblProducts9">Product:</label>
+  <select id="Products9" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+   <option value="Cok">Coke</option>
+   <option value="Dtc">Diet Coke</option>
+   <option value="Drp">Dr. Pepper</option>
+   <option value="Spr">Sprite</option>
+   <option value="Tea">Iced Tea</option>
+  </select>
+  </div>
+  </div>
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Quantity9" id="lblQty9"> Quantity:</label>
+   <select id="Quantity9" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  </select>
+  </div>
+  </div>
+  </div>
+  
+ <div class="row">
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Products10" id="lblProducts10">Product:</label>
+  <select id="Products10" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+   <option value="Cok">Coke</option>
+   <option value="Dtc">Diet Coke</option>
+   <option value="Drp">Dr. Pepper</option>
+   <option value="Spr">Sprite</option>
+   <option value="Tea">Iced Tea</option>
+  </select>
+  </div>
+  </div>
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Quantity10" id="lblQty10"> Quantity:</label>
+   <select id="Quantity10" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  </select>
+  </div>
+  </div>
+  </div>
+  
+  <div class="row">
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Products11" id="lblProducts11">Product:</label>
+  <select id="Products11" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+   <option value="Cok">Coke</option>
+   <option value="Dtc">Diet Coke</option>
+   <option value="Drp">Dr. Pepper</option>
+   <option value="Spr">Sprite</option>
+   <option value="Tea">Iced Tea</option>
+  </select>
+  </div>
+  </div>
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Quantity11" id="lblQty11"> Quantity:</label>
+   <select id="Quantity11" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  </select>
+  </div>
+  </div>
+  </div>
+  
+  <div class="row">
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Products12" id="lblProducts12">Product:</label>
+  <select id="Products12" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+   <option value="Cok">Coke</option>
+   <option value="Dtc">Diet Coke</option>
+   <option value="Drp">Dr. Pepper</option>
+   <option value="Spr">Sprite</option>
+   <option value="Tea">Iced Tea</option>
+  </select>
+  </div>
+  </div>
+ 
+          <div class="col-sm-6" >
+              <div class="form-group">
+        <label for="Quantity12" id="lblQty12"> Quantity:</label>
+   <select id="Quantity12" class="custom-select custum-select-sm">
+   <option disabled selected value> -- select an option -- </option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  </select>
+  </div>
+  </div>
+  </div>
+  
+ 
+  
+          <div class="col-sm-12" >
+              <div class="form-group">
+    <label for="Comments" id="lblComments">Comments:</label>
+    <textarea class="form-control" id="Comments" placeholder="Leave your comments here..."></textarea>
+  </div>
+  </div>
+  
+  
+  
+  
+  
+
+	<button class="btn btn-light text-center"  id="submit"  onclick="ProcessForm()" type="submit">Submit</button>
+	
+	</section>
+	</form>
+	
+	    <!-- Database Scripts -->
+    
+<script>
+
+  
+function ProcessForm()
+{
+     var OrderIDPKID = "";
+    
+      var myData = {};
+      
+      myData.CustomerName =  document.getElementById("CustomerName").value;
+      myData.Email =  document.getElementById("Email").value;
+      myData.PhoneNumber =  document.getElementById("PhoneNumber").value;
+      myData.PickUp =  document.getElementById("PickUp").value;
+      myData.Comments =  document.getElementById("Comments").value;
+  
+  
+  var myURL = "https://mythos-bcrawford.c9users.io/pizza/restapi.php/Order/";
+        var myMethod = "POST";
+
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData,
+          async: false
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+            OrderIDPKID = msg;
+        });
+
+
+// Product 1
+     var x = document.getElementById("Quantity1").selectedIndex;
+     var Quantity = document.getElementById("Quantity1")[x].value;
+
+     var x = document.getElementById("Crusts1").selectedIndex;
+     var Crusts = document.getElementById("Crusts1")[x].value;
+
+     var x = document.getElementById("Sizes1").selectedIndex;
+     var Sizes = document.getElementById("Sizes1")[x].value;
+     
+     var x = document.getElementById("Products1").selectedIndex;
+     var Products = document.getElementById("Products1")[x].value;
+     
+    if (Quantity != "0") {
+
+      var myData = {};
+      myData.OrderIDPKID = OrderIDPKID;
+      myData.Qty =  Quantity
+      myData.Products = Products;
+      myData.Sizes = Sizes;
+      myData.Crusts = Crusts;
+
+      
+      if (Sizes == "Sml") {
+          myData.Prices = "10.99";
+      }
+      if (Sizes == "Med") {
+          myData.Prices = "12.99";
+      }
+      if (Sizes == "Lrg") {
+          myData.Prices = "15.99";
+      }
+  var myURL = "https://mythos-bcrawford.c9users.io/pizza/restapi.php/OrderDetails/";
+        var myMethod = "POST";
+
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData,
+          async: false
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+        });
+
+    }
+// Product 2
+     var x = document.getElementById("Quantity2").selectedIndex;
+     var Quantity = document.getElementById("Quantity2")[x].value;
+
+     var x = document.getElementById("Crusts2").selectedIndex;
+     var Crusts = document.getElementById("Crusts2")[x].value;
+
+     var x = document.getElementById("Sizes2").selectedIndex;
+     var Sizes = document.getElementById("Sizes2")[x].value;
+     
+     var x = document.getElementById("Products2").selectedIndex;
+     var Products = document.getElementById("Products2")[x].value;
+
+    if (Quantity != "0") {
+
+      var myData = {};
+
+      myData.OrderIDPKID = OrderIDPKID;
+      myData.Qty =  Quantity
+      myData.Products = Products;
+      myData.Sizes = Sizes;
+      myData.Crusts = Crusts;
+      
+      if (Sizes == "Sml") {
+          myData.Prices = "10.99";
+      }
+      if (Sizes == "Med") {
+          myData.Prices = "12.99";
+      }
+      if (Sizes == "Lrg") {
+          myData.Prices = "15.99";
+      }
+      var myURL = "https://mythos-bcrawford.c9users.io/pizza/restapi.php/OrderDetails/";
+        var myMethod = "POST";
+
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData,
+          async: false
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+        });
+
+    }
+
+// Product 3
+     var x = document.getElementById("Quantity3").selectedIndex;
+     var Quantity = document.getElementById("Quantity3")[x].value;
+
+     var x = document.getElementById("Crusts3").selectedIndex;
+     var Crusts = document.getElementById("Crusts3")[x].value;
+
+     var x = document.getElementById("Sizes3").selectedIndex;
+     var Sizes = document.getElementById("Sizes3")[x].value;
+     
+     var x = document.getElementById("Products3").selectedIndex;
+     var Products = document.getElementById("Products3")[x].value;
+
+    if (Quantity != "0") {
+
+      var myData = {};
+
+      myData.OrderIDPKID = OrderIDPKID;
+      myData.Qty =  Quantity
+      myData.Products = Products;
+      myData.Sizes = Sizes;
+      myData.Crusts = Crusts;
+      
+      if (Sizes == "Sml") {
+          myData.Prices = "10.99";
+      }
+      if (Sizes == "Med") {
+          myData.Prices = "12.99";
+      }
+      if (Sizes == "Lrg") {
+          myData.Prices = "15.99";
+      }
+      var myURL = "https://mythos-bcrawford.c9users.io/pizza/restapi.php/OrderDetails/";
+        var myMethod = "POST";
+
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData,
+          async: false
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+        });
+
+    }
+// Product 4
+     var x = document.getElementById("Quantity4").selectedIndex;
+     var Quantity = document.getElementById("Quantity4")[x].value;
+
+     var x = document.getElementById("Crusts4").selectedIndex;
+     var Crusts = document.getElementById("Crusts4")[x].value;
+
+     var x = document.getElementById("Sizes4").selectedIndex;
+     var Sizes = document.getElementById("Sizes4")[x].value;
+     
+     var x = document.getElementById("Products4").selectedIndex;
+     var Products = document.getElementById("Products4")[x].value;
+
+    if (Quantity != "0") {
+
+      var myData = {};
+
+      myData.OrderIDPKID = OrderIDPKID;
+      myData.Qty =  Quantity
+      myData.Products = Products;
+      myData.Sizes = Sizes;
+      myData.Crusts = Crusts;
+      
+      if (Sizes == "Sml") {
+          myData.Prices = "10.99";
+      }
+      if (Sizes == "Med") {
+          myData.Prices = "12.99";
+      }
+      if (Sizes == "Lrg") {
+          myData.Prices = "15.99";
+      }
+      var myURL = "https://mythos-bcrawford.c9users.io/pizza/restapi.php/OrderDetails/";
+        var myMethod = "POST";
+
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData,
+          async: false
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+        });
+
+    }
+      
+// Product 5
+     var x = document.getElementById("Quantity5").selectedIndex;
+     var Quantity = document.getElementById("Quantity5")[x].value;
+     var x = document.getElementById("Products5").selectedIndex;
+     var Products = document.getElementById("Products5")[x].value;
+
+    if (Quantity != "0") {
+
+      var myData = {};
+
+      myData.OrderIDPKID = OrderIDPKID;
+      myData.Qty =  Quantity
+      myData.Products = Products;
+      
+      if (Products == "Reg") {
+          myData.Prices = "3.99";
+      }
+      if (Products == "Stf") {
+          myData.Prices = "5.99";
+      }
+      if (Products == "Sal") {
+          myData.Prices = "2.99";
+      }
+      var myURL = "https://mythos-bcrawford.c9users.io/pizza/restapi.php/OrderDetails/";
+        var myMethod = "POST";
+
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData,
+          async: false
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+        });
+
+    }
+      
+// Product 6
+     var x = document.getElementById("Quantity6").selectedIndex;
+     var Quantity = document.getElementById("Quantity6")[x].value;
+     var x = document.getElementById("Products6").selectedIndex;
+     var Products = document.getElementById("Products6")[x].value;
+
+    if (Quantity != "0") {
+
+      var myData = {};
+
+      myData.OrderIDPKID = OrderIDPKID;
+      myData.Qty =  Quantity
+      myData.Products = Products;
+
+      
+      if (Products == "Reg") {
+          myData.Prices = "3.99";
+      }
+      if (Products == "Stf") {
+          myData.Prices = "5.99";
+      }
+      if (Products == "Sal") {
+          myData.Prices = "2.99";
+      }
+          
+      var myURL = "https://mythos-bcrawford.c9users.io/pizza/restapi.php/OrderDetails/";
+        var myMethod = "POST";
+
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData,
+          async: false
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+        });
+
+    }
+      
+      // Product 7
+     var x = document.getElementById("Quantity7").selectedIndex;
+     var Quantity = document.getElementById("Quantity7")[x].value;
+
+     var x = document.getElementById("Products7").selectedIndex;
+     var Products = document.getElementById("Products7")[x].value;
+
+    if (Quantity != "0") {
+
+      var myData = {};
+
+      myData.OrderIDPKID = OrderIDPKID;
+      myData.Qty =  Quantity
+      myData.Products = Products;
+      myData.Sizes = Sizes;
+      myData.Crusts = Crusts;
+      
+      if (Products == "Reg") {
+          myData.Prices = "3.99";
+      }
+      if (Products == "Stf") {
+          myData.Prices = "5.99";
+      }
+      if (Products == "Sal") {
+          myData.Prices = "2.99";
+      }
+      var myURL = "https://mythos-bcrawford.c9users.io/pizza/restapi.php/OrderDetails/";
+        var myMethod = "POST";
+
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData,
+          async: false
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+        });
+
+    }
+      
+      // Product 8
+     var x = document.getElementById("Quantity8").selectedIndex;
+     var Quantity = document.getElementById("Quantity8")[x].value;
+
+     var x = document.getElementById("Products8").selectedIndex;
+     var Products = document.getElementById("Products8")[x].value;
+
+    if (Quantity != "0") {
+
+      var myData = {};
+
+      myData.OrderIDPKID = OrderIDPKID;
+      myData.Qty =  Quantity
+      myData.Products = Products;
+      myData.Sizes = Sizes;
+      myData.Crusts = Crusts;
+      
+      if (Products == "Cok, Dtc, Drp, Spr, Tea") {
+          myData.Prices = "1.50";
+      }
+      
+      var myURL = "https://mythos-bcrawford.c9users.io/pizza/restapi.php/OrderDetails/";
+        var myMethod = "POST";
+
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData,
+          async: false
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+        });
+
+    }
+      
+      // Product 9
+     var x = document.getElementById("Quantity9").selectedIndex;
+     var Quantity = document.getElementById("Quantity9")[x].value;
+   
+     var x = document.getElementById("Products9").selectedIndex;
+     var Products = document.getElementById("Products9")[x].value;
+
+    if (Quantity != "0") {
+
+      var myData = {};
+
+      myData.OrderIDPKID = OrderIDPKID;
+      myData.Qty =  Quantity
+      myData.Products = Products;
+      myData.Sizes = Sizes;
+      myData.Crusts = Crusts;
+      
+      if (Products == "Cok, Dtc, Drp, Spr, Tea") {
+          myData.Prices = "1.50";
+      }
+
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData,
+          async: false
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+        });
+
+    }
+      
+      // Product 10
+     var x = document.getElementById("Quantity10").selectedIndex;
+     var Quantity = document.getElementById("Quantity10")[x].value;
+
+     var x = document.getElementById("Products10").selectedIndex;
+     var Products = document.getElementById("Products10")[x].value;
+
+    if (Quantity != "0") {
+
+      var myData = {};
+
+      myData.OrderIDPKID = OrderIDPKID;
+      myData.Qty =  Quantity
+      myData.Products = Products;
+      myData.Sizes = Sizes;
+      myData.Crusts = Crusts;
+      
+      if (Products == "Cok, Dtc, Drp, Spr, Tea") {
+          myData.Prices = "1.50";
+      }
+
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData,
+          async: false
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+        });
+
+    }
+      
+      // Product 11
+     var x = document.getElementById("Quantity11").selectedIndex;
+     var Quantity = document.getElementById("Quantity11")[x].value;
+
+     var x = document.getElementById("Products11").selectedIndex;
+     var Products = document.getElementById("Products11")[x].value;
+
+    if (Quantity != "0") {
+
+      var myData = {};
+
+      myData.OrderIDPKID = OrderIDPKID;
+      myData.Qty =  Quantity
+      myData.Products = Products;
+      myData.Sizes = Sizes;
+      myData.Crusts = Crusts;
+      
+      if (Products == "Cok, Dtc, Drp, Spr, Tea") {
+          myData.Prices = "1.50";
+      }
+      var myURL = "https://mythos-bcrawford.c9users.io/pizza/restapi.php/OrderDetails/";
+        var myMethod = "POST";
+
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData,
+          async: false
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+        });
+
+    }
+      
+      // Product 12
+     var x = document.getElementById("Quantity12").selectedIndex;
+     var Quantity = document.getElementById("Quantity12")[x].value;
+
+     var x = document.getElementById("Products12").selectedIndex;
+     var Products = document.getElementById("Products12")[x].value;
+
+    if (Quantity != "0") {
+
+      var myData = {};
+
+      myData.OrderIDPKID = OrderIDPKID;
+      myData.Qty =  Quantity
+      myData.Products = Products;
+      myData.Sizes = Sizes;
+      myData.Crusts = Crusts;
+      
+      if (Products == "Cok, Dtc, Drp, Spr, Tea") {
+          myData.Prices = "1.50";
+      }
+      
+  var myURL = "https://mythos-bcrawford.c9users.io/pizza/restapi.php/OrderDetails/";
+        var myMethod = "POST";
+
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData,
+          async: false
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+        });
+
+    }
+}
+    
+</script> 
+	
+	
+
+<footer class="primary">
+  	<h6><a href="index.html">Home</a> | <a href="index.html#chef">Meet the Chef</a> | <a href="menu.html">Menu</a> | <a href="order-option.html">Order</a> | <a href="contact.html">Contact</a></h6>
+    <h6>Visit Us • EIT 547, 2801 South University Ave., LR, AR, 72204</h6>
+    <h6>&copy; 2018 Home Slice, All Rights Reserved</h6>
+</footer>
+</body>
+
+</html>

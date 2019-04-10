@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117838861-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-117838861-2');
+	</script>
+	<title>Menu</title>
+	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="assets/css/style.css" rel="stylesheet">
+	
+
+
+</head>
+
+<body>
+	<header class="primary">
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+			<div class="container-fluid">
+				<!-- Logo -->
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/img/hs-logo-225.png" class="logo">
+					<img src="assets/img/logomobile-50.png" class="mobile-logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="menu.html">Menu</a>
+						</li>
+						<li class="nav-item active">
+                            <div id="ordernow">
+								<a class="nav-link" href="order-option.html">Order</a>
+							</div>						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#chef">Meet the Chef</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+	
+	<!-- Order Form -->
+	
+	
+
+
+	<section id="order" class="container">
+	  <div class="ordertxt">
+        <h1>Order</h1>
+        </div>
+        <hr>
+        <br>
+        <form id="PizzaForm" method="post">
+          
+  <div class="form-group">
+    <label for="CustomerName">* Name:</label>
+    <input type="text" class="form-control" id="CustomerName" placeholder="Enter Your Name Here">
+  </div>
+  
+  <div class="form-group">
+    <label for="Email">* Email:</label>
+    <input type="text" class="form-control" id="Email" placeholder="Enter Your Email Here">
+  </div>
+
+</div>
+
+<div class="form-group">
+    <label for="PhoneNumber">* Phone Number:</label>
+    <input type="tel" class="form-control" value="1-(555)-555-5555" id="PhoneNumber" placeholder="Enter Your Phone Number Here">
+  </div>
+  
+  <div class="form-group">
+    <label for="PickUp">Pick Up Time:</label>
+    <input type="time" class="form-control" id="PickUp" placeholder="Pick up time" required>
+  </div>
+ 
+  <div class="question">
+        <label for="Qty" id="lblQty"> Quantity:</label>
+    </div>
+    
+<select id="Quantity1" class="custom-select custum-select-sm">
+   <option selected>Open this select menu</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">3</option>
+  <option value="5">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+
+  </select>
+
+<div class="question">
+        <label for="Sizes" id="lblSizes"> Size/Price:</label>
+</div>
+    
+<select id="Sizes1" class="custom-select custum-select-sm">
+   <option selected>Open this select menu</option>
+  <option value="Sml">Small $10.99</option>
+  <option value="Med">Medium $12.99</option>
+  <option value="Lrg">Large $15.99</option>
+  <option value="Reg">Regular Breadsticks $3.99</option>
+  <option value="Stf">Stuffed Breakdsticks $5.99</option>
+</select>
+
+<div class="question">
+        <label for="Products" id="lblProducts"> Product:</label>
+    </div>
+<select id="Products1" class="custom-select custum-select-sm">
+   <option selected>Open this select menu</option>
+  <option value="Chz">Cheese</option>
+  <option value="Pep">Pepperoni</option>
+  <option value="Veg">Veggie</option>
+  <option value="Hog">The Hog</option>
+  <option value="Haw">Hawaiian</option>
+  <option value="Sup">Supreme</option>
+  <option value="Brd">Breadsticks</option>
+  <option value="Sal">Salad</option>
+  <option value="Cok">Coke</option>
+  <option value="Dtc">Diet Coke</option>
+  <option value="Drp">Dr. Pepper</option>
+  <option value="Spr">Sprite</option>
+  <option value="Tea">Iced Tea</option>
+  </select>
+  
+ <div class="question">
+        <label for="Crusts" id="lblCrusts"> Crust:</label>
+    </div>
+    
+  <select id="Crusts1" class="custom-select custum-select-sm">
+   <option selected>Open this select menu</option>
+  <option value="Thc">Thick</option>
+  <option value="Thn">Thin</option>
+  </select>
+  
+      
+ <div class="question">
+        <label for="Comments" id="Comments"> Comments:</label>
+    </div>
+    <textarea class="form-control" id="Comments" placeholder="Leave your comments here..."></textarea>
+    
+
+	<button class="btn light-secondary" type="submit" id="submit" onclick="ProcessForm()">Submit</button>
+
+	</section>  
+	
+</form>
+    
+    <!-- Database Scripts -->
+    
+<script>
+
+  
+function ProcessForm()
+{
+     var OrderIDPKID = "";
+    
+      var myData = {};
+      
+      myData.CustomerName =  document.getElementById("CustomerName").value;
+      myData.Email =  document.getElementById("Email").value;
+      myData.PhoneNumber =  document.getElementById("PhoneNumber").value;
+//      myData.PickUp =  document.getElementById("PickUp").value;
+      myData.PickUp =  "";
+      myData.Comments =  document.getElementById("Comments").value;
+  
+  
+  var myURL = "https://mythos-bcrawford.c9users.io/pizza/restapi.php/Order/";
+        var myMethod = "POST";
+$(document).ready(function() {
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData,
+          async: false
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+            OrderIDPKID = msg;
+        });
+  });
+
+// Product 1
+     var x = document.getElementById("Quantity1").selectedIndex;
+     var Quantity = document.getElementById("Quantity1")[x].value;
+
+     var x = document.getElementById("Crusts1").selectedIndex;
+     var Crusts = document.getElementById("Crusts1")[x].value;
+
+     var x = document.getElementById("Sizes1").selectedIndex;
+     var Sizes = document.getElementById("Sizes1")[x].value;
+     
+     var x = document.getElementById("Products1").selectedIndex;
+     var Sizes = document.getElementById("Products1")[x].value;
+
+    if (Quantity != "0") {
+
+      var myData = {};
+      myData.OrderIDPKID = OrderIDPKID;
+      myData.Qty =  Quantity;
+      myData.Products = document.getElementById("Products1").value;
+      myData.Sizes = Sizes;
+      myData.Crusts = Crusts;
+      
+      if (Sizes == "Sml") {
+          myData.Prices = "10.99";
+      }
+      if (Sizes == "Med") {
+          myData.Prices = "12.99";
+      }
+      if (Sizes == "Lrg") {
+          myData.Prices = "15.99";
+      }
+      
+
+  
+  var myURL = "https://mythos-bcrawford.c9users.io/pizza/restapi.php/OrderDetails/";
+        var myMethod = "POST";
+$(document).ready(function() {
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData,
+          async: false
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+        });
+  });
+    }    
+    
+    
+    
+}
+</script> 
+    
+
+    
+<footer class="primary">
+  	<h6><a href="index.html">Home</a> | <a href="index.html#chef">Meet the Chef</a> | <a href="menu.html">Menu</a> | <a href="order-option.html">Order</a> | <a href="contact.html">Contact</a></h6>
+    <h6>Visit Us • EIT 547, 2801 South University Ave., LR, AR, 72204</h6>
+    <h6>&copy; 2018 Home Slice, All Rights Reserved</h6>
+</footer>
+</body>
+
+</html>
+	
